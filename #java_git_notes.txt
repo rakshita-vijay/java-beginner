@@ -1,0 +1,24 @@
+To connect GitHub and VSCodium and get the repository to edit:
+-------------------------------------------------------------
+cd ~/dev/rakshita/java-beginner
+code .
+
+// ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
+To run the program:
+------------------
+javac ./HelloWorld.java && java HelloWorld
+javac ./HelloWorld.java && java HelloWorld <argument, if in code>
+
+// ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
+"String[] args" needs to be given only once in the main function definition, but n number of arguments can be passed by the user into the program when calling
+
+the passed arguments, when called by user (in System.out commands, etc.), are indexed from 0, so they should be called as args[0], args[1], etc, where args[n] specifies a whole string entered (until a space, which differentiates between the input values)
+
+// ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
+print: after every System.out command, the compiler does not go to a new line
+println: after every System.out command, the compiler automatically goes to a new line
+
+// ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
