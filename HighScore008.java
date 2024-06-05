@@ -11,13 +11,33 @@ public class HighScore008 {
     }
   }
 
-  public static void displayHighScorePosition(String name, int highScorePosition) {
-    System.out.println(name + " got into position " + highScorePosition + " on the high score list.");
+  public static void displayHighScorePosition(String name, int score, int highScorePosition) {
+    System.out.println(name + " (score: " + score + ") got into position " + highScorePosition + " on the high score list.");
   }
 
   public static void main(String[] args) {
-    int valScore = 25;
-    int highScorePosition = calcHighScorePosition(valScore);
-    displayHighScorePosition(args[0], highScorePosition);
+    int highScorePosition = calcHighScorePosition(1500);
+    displayHighScorePosition(args[0], 1500, highScorePosition);
+
+    highScorePosition = calcHighScorePosition(1000);
+    displayHighScorePosition(args[1], 1000, highScorePosition);
+
+    highScorePosition = calcHighScorePosition(999);
+    displayHighScorePosition(args[2], 999, highScorePosition);
+
+    highScorePosition = calcHighScorePosition(500);
+    displayHighScorePosition(args[3], 500, highScorePosition);
+
+    highScorePosition = calcHighScorePosition(499);
+    displayHighScorePosition(args[4], 499, highScorePosition);
+
+    highScorePosition = calcHighScorePosition(100);
+    displayHighScorePosition(args[5], 100, highScorePosition);
+
+    highScorePosition = calcHighScorePosition(99);
+    displayHighScorePosition(args[6], 99, highScorePosition);
+
+    highScorePosition = calcHighScorePosition(25);
+    displayHighScorePosition(args[7], 25, highScorePosition);
   }
 }
