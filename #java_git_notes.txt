@@ -36,3 +36,21 @@ double is more precise than float (16 vs. 8 decimal places shown)
 // ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
 
 + is addition and concatenation
+
+// ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
+when compiler overloading is occurring,
+RETURN TYPE      METHOD NAME      PARAMETER(S)      ERROR OR NOT
+   same             same              same             error
+   same           different           same            no error
+
+   same             same           different          no error
+   same           different        different          no error
+
+ different          same              same             error
+ different        different           same            no error
+
+ different          same           different          no error
+ different        different        different          no error
+
+// ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
