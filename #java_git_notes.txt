@@ -34,3 +34,5 @@ float - F
 double is more precise than float (16 vs. 8 decimal places shown)
 
 // ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
++ is addition and concatenation
