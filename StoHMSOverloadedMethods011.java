@@ -1,4 +1,5 @@
 public class StoHMSOverloadedMethods011 {
+  // // 2 calling 1
   // public static String getDurationString(int seconds) {
   //   if (seconds < 0) {
   //     return seconds + " seconds is an invalid input.";
@@ -21,14 +22,14 @@ public class StoHMSOverloadedMethods011 {
   //   }
   // }
 
+  // 1 calling 2
   public static String getDurationString(int seconds) {
     if (seconds < 0) {
       return seconds + " seconds is an invalid input.";
     } else {
       int minutes = seconds / 60;
       int secondsCopy = seconds % 60;
-      return "" + seconds + " seconds = " + getDurationString(minutes,
-      secondsCopy);
+      return "" + seconds + " seconds = " + getDurationString(minutes, secondsCopy);
     }
   }
 
