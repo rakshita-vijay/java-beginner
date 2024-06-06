@@ -39,7 +39,8 @@ double is more precise than float (16 vs. 8 decimal places shown)
 
 // ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
 
-when compiler overloading is occurring,
+method / compile-time overloading: method overloading is a compile-time polymorphism in which many methods share the same name but have distinct arguments, signatures, and return types
+
 RETURN TYPE      METHOD NAME      PARAMETER(S)      ERROR OR NOT
    same             same              same             error
    same           different           same            no error
