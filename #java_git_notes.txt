@@ -55,3 +55,9 @@ RETURN TYPE      METHOD NAME      PARAMETER(S)      ERROR OR NOT
  different        different        different          no error
 
 // ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
+looping statements: if-else, for, while, do-while, switch
+
+// ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
+data types that can be used in switch-case: byte, short, int, char, String, enum
