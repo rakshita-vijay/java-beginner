@@ -1,18 +1,16 @@
 public class ParsingStringToInt020 {
-  public static String getInputFromConsole(int currentYear) {
-    String name = System.console().readLine("Hi. What's your name? ");
-    System.out.println("Hi " + name + ", thanks for signing up for this trial!");
+  public static String calculatingAge(String currentYear) {
+    int yearNow = Integer.parseInt(currentYear);
 
-    String yob = System.console().readLine("When were you born? ");
+    String yob = "2006";
     int yearOfBirth = Integer.parseInt(yob);
-    // if double: double yearOfBirth = Double.parseDouble(yob);
 
-    int age = currentYear - yearOfBirth;
+    int age = yearNow - yearOfBirth;
     return "Your age is " + age + ". ";
   }
 
   public static void main(String[] args) {
-    int currentYear = 2024;
+    String currentYear = "2024";
 
     String ageFromConsole = getInputFromConsole(currentYear);
     System.out.println(ageFromConsole);
