@@ -7,6 +7,7 @@ public class GettingInputFromUser021 {
 
     String yob = System.console().readLine("When were you born? ");
     int yearOfBirth = Integer.parseInt(yob);
+    // if double: double yearOfBirth = Double.parseDouble(yob);
 
     int age = currentYear - yearOfBirth;
     return "Your age is " + age + ". ";
