@@ -61,3 +61,22 @@ looping statements: if-else, for, while, do-while, switch
 // ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
 
 data types that can be used in switch-case: byte, short, int, char, String, enum
+
+// ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
+To get input from the user:
+--------------------------
+1) String <variable> = System.console().readLine("<input line, if required>");
+
+2) Class instance creation expression:
+
+   <className> <variable> = new <className>();
+   <className> <variable> = new <className>(<argument 1>, <argument 2>);
+
+   import java.util.Scanner;
+   (or import java.util.*;)
+
+   Scanner <variable> = new Scanner(System.in);
+   Scanner <variable> = new Scanner(new File("nameOfFileOnFileSystem"));
+
+   String <variable> = <variable>.nextline();
