@@ -21,10 +21,24 @@ public class GettingInputFromUser021 {
 
     System.out.println("Hi " + name + ", thanks for signing up for this trial!");
 
-    System.out.print("When were you born? ");
-    int yearOfBirth = scan.nextInt();
+    // System.out.print("When were you born? ");
+    // int yearOfBirth = scan.nextInt();
 
-    int age = currentYear - yearOfBirth;
+    int age = 0;
+
+    do {
+      System.out.print("When were you born? ");
+
+      // try {
+      //   int yearOfBirth = scan.nextInt();
+      //   age = currentYear - yearOfBirth;
+      // } catch (NumberFormatException badUserData) {
+      //   System.out.print("You have not entered a number. Enter a valid year. ");
+      // }
+
+      int yearOfBirth = scan.nextInt();
+      age = currentYear - yearOfBirth;
+    } while (age > 125 || age < 0);
 
     return "Your age is " + age + ". ";
   }
