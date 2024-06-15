@@ -20,6 +20,7 @@ public class ReadingUserInput022 {
       }
     } while (counter <= 5);
 
+    System.out.println();
     System.out.println("Sum: " + sum);
   }
 }

@@ -12,7 +12,7 @@ public class ParsingStringToInt020 {
   public static void main(String[] args) {
     String currentYear = "2024";
 
-    String ageFromConsole = getInputFromConsole(currentYear);
+    String ageFromConsole = calculatingAge(currentYear);
     System.out.println(ageFromConsole);
   }
 }
