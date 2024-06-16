@@ -42,3 +42,37 @@ class member modifiers: public, protected, (none), private
 
 encapsulation: bundling of behaviour and attributes on a single object
                hiding fields and methods from public access
+
+// ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
+how to call a public class:
+--------------------------
+1) define a public class outside the Main class as you would in a separate file
+   public class Main {
+     public void abc {
+       <...>
+     }
+   }
+   public class Xyz {   // referred to as sister class
+     public void pqr {
+       <...>
+     }
+   }
+
+2) call it in one of Main class' methods
+   <className> <variableName> = new <className>();
+   ex: Xyz var = new Xyz();
+       var.pqr();
+
+// ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
+fields: defined in class code block (not in method);
+        assigned default values if not initialized;
+
+getter: method that gets the value of a private field and returns it;
+        written in the sister class (Xyz): public <returnType> get<detail>() {
+                                             <...>
+                                           }
+        called in the Main class in a method as var.getDetail();
+
+setter: method that sets the value of a private field
