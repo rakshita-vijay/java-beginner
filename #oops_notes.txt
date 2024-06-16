@@ -7,3 +7,18 @@ state: features that describe an object, stored in fields / variables / attribut
 behaviour: actions performed by an object, stored in methods
 
 class: blueprint for designing object
+class members: instance, static
+member can be field / method / dependent element
+
+static member: one copy in memory; value is associated with the object itself;
+               accessed by class name, without object;
+               can access only static attributes;
+               requires 'static' keyword
+               static variable ex: static int a = 1;
+
+instance member: each object has a different value stored for this field;
+                 accessed by object of class;
+                 can access all attributes;
+                 does not require keyword (ex: int b = 2;)
+                 instance variable ex: int a = 1;
+                 calling an instance method: Scanner scan = new Scanner(System.in);
