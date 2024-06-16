@@ -3,7 +3,7 @@ features of OOPs: inheritance, encapsulation, polymorphism, composition
 
 // ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
 
-state: features that describe an object, stored in fields / variables / attributes
+state: features that describe an object, stored in fields / variables / attributes, defined in class code block (not in method)
 behaviour: actions performed by an object, stored in methods
 
 class: blueprint for designing object
@@ -22,3 +22,22 @@ instance member: each object has a different value stored for this field;
                  does not require keyword (ex: int b = 2;)
                  instance variable ex: int a = 1;
                  calling an instance method: Scanner scan = new Scanner(System.in);
+
+// ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
+classes are grouped into packages
+
+top-level class is not enclosed in another class
+class modifiers: public, (none)
+                 public: any class in any package can access (unrestricted)
+                 none: only classes in same package can access
+
+class member modifiers: public, protected, (none), private
+                        public: any class in any package can access (unrestricted)
+                        protected: classes in same package and subclasses in other packages can access
+                        none: only classes in same package can access
+                        private: no other class can access this member
+
+// ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
+encapsulation: bundling of behaviour and attributes on a single object
