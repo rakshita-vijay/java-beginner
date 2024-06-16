@@ -41,3 +41,4 @@ class member modifiers: public, protected, (none), private
 // ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
 
 encapsulation: bundling of behaviour and attributes on a single object
+               hiding fields and methods from public access
