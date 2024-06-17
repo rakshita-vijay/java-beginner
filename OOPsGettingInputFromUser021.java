@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class GettingInputFromUser021 {
+public class OOPsGettingInputFromUser021 {
   public static String getInputFromConsole(int currentYear) {
     String name = System.console().readLine("Hi. What's your name? ");
     System.out.println("Hi " + name + ", thanks for signing up for this trial!");

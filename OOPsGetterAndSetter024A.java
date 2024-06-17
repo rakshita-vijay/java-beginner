@@ -1,6 +1,6 @@
-public class GetterAndSetter024A {
+public class OOPsGetterAndSetter024A {
   public static void main(String[] args) {
-    Car024B car = new Car024B();
+    OOPsCar024B car = new OOPsCar024B();
     car.setMake("Porsche");
     // car.model = "Carrera";
     // car.color = "Red";

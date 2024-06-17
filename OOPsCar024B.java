@@ -1,4 +1,4 @@
-public class Car024B {
+public class OOPsCar024B {
   private String make = "Tesla";
   private String model = "Model X";
   private String color = "Grey";

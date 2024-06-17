@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class MinAndMaxChallenge023 {
+public class OOPsMinAndMaxChallenge023 {
   public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
 
