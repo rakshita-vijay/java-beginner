@@ -76,3 +76,9 @@ getter: method that gets the value of a private field and returns it;
         called in the Main class in a method as var.getDetail();
 
 setter: method that sets the value of a private field
+
+// ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
+this: special keyword, refers to instance created when object was instantiated;
+      used in setter;
+      called as: this.<variable> = <same variable>; (because the value of the parameter is assigned to the private variable)
