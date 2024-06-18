@@ -7,16 +7,18 @@ public class OOPsCustomer026B {
   public double getCreditLimit() { return creditLimit; }
   public String getEmailAddress() { return emailAddress; }
 
-  public OOPsCustomer026B() { }
+  public OOPsCustomer026B() {
+    // this("TUV", "TUV@gmail.com");
+  }
+
+  public OOPsCustomer026B(String name, String emailAddress) {
+    this(name, 13579, emailAddress);
+  }
 
   public OOPsCustomer026B(String name, double creditLimit, String emailAddress) {
     this.name = name;
     this.creditLimit = creditLimit;
     this.emailAddress = emailAddress;
-  }
-
-  public OOPsCustomer026B(String name, String emailAddress) {
-    this(name, 13579, emailAddress);
   }
 
   public void printDetails() {
