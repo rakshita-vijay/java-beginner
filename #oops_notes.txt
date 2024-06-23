@@ -92,6 +92,12 @@ POJO: Plain Old Java Object;
       aka bean or JavaBean: JavaBean = POJO + rules;
           Entity (it mirrors db entities);
           DTO: Data Transfer Object (description of an object that can be modeled as just data);
-      a
 
 // ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
+inheritance: using 'extends' (specifies the superclass / parent class of the class being declared);
+             only one class in extends clause;
+             uses super() to call the superclass being extended;
+
+super(): calls a constructor directly on the super class from the subclass' constructor;
+         must be the first statement of the constructor (thus, cannot be used with this());
