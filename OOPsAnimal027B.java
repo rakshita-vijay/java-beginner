@@ -1,5 +1,5 @@
 public class OOPsAnimal027B {
-  private String type;
+  protected String type;   // allows OOPsDog027C to access it
   private String size;
   private double weight;
 
@@ -11,15 +11,15 @@ public class OOPsAnimal027B {
     this.weight = weight;
   }
 
-  public String toString() {
-    return "Animal { type = " + type + ", size = " + size + ", weight = " + weight + " }";
-  }
-
   public void move(String speed) {
-    System.out.println(type + " moves " + speed);
+    System.out.println(type + " moves " + speed.toLowerCase() + ".");
   }
 
   public void makesNoise() {
-    System.out.println(type + " makes some kind of noise");
+    System.out.println(type + " makes some kind of noise.");
+  }
+
+  public String toString() {
+    return "Animal { Type = " + type + ", Size = " + size + ", Weight = " + weight + " }";
   }
 }

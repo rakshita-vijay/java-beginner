@@ -100,4 +100,11 @@ inheritance: using 'extends' (specifies the superclass / parent class of the cla
              uses super() to call the superclass being extended;
 
 super(): calls a constructor directly on the super class from the subclass' constructor;
-         must be the first statement of the constructor (thus, cannot be used with this());
+         must be the first statement of the constructor (thus, cannot be used with this())
+
+// ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
+overriding methods: method creation on a subclass with the same signature as a method on a superclass;
+                    method signature: method name + (number & types of parameters);
+                    child class shows different behaviour from the parent class;
+                    extends functionality of parent class
