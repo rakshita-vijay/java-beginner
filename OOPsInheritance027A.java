@@ -18,6 +18,14 @@ public class OOPsInheritance027A {
     System.out.println();
     OOPsDog027C wolf = new OOPsDog027C("Wolf", 40);
     doAnimalStuff(wolf, "Fast");
+
+    System.out.println();
+    OOPsFish027D mackarel = new OOPsFish027D("Mackarel", 1, 0, 2);
+    doAnimalStuff(mackarel, "Slow");
+
+    System.out.println();
+    OOPsFish027D goldie = new OOPsFish027D("Goldfish", 0.25, 2, 3);
+    doAnimalStuff(goldie, "Fast");
   }
 
   public static void doAnimalStuff(OOPsAnimal027B animal, String speed) {

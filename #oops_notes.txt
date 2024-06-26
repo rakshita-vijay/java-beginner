@@ -108,3 +108,8 @@ overriding methods: method creation on a subclass with the same signature as a m
                     method signature: method name + (number & types of parameters);
                     child class shows different behaviour from the parent class;
                     extends functionality of parent class
+
+polymorphism: 'many forms';
+              simplifies and extends code;
+
+java..lang.Object
