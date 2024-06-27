@@ -25,6 +25,12 @@ instance member: each object has a different value stored for this field;
 
 // ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
 
+interactive programs:
+--------------------
+https://courses.cs.washington.edu/courses/cse142/11sp/lectures/04-15/slides4-1.pdf
+
+// ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
 classes are grouped into packages
 
 top-level class is not enclosed in another class
@@ -112,4 +118,5 @@ overriding methods: method creation on a subclass with the same signature as a m
 polymorphism: 'many forms';
               simplifies and extends code;
 
-java..lang.Object
+Object(): class from which all objects, arrays, etc. inherit methods;
+          called as 'extends java.lang.Object' or simply 'extends Object';
