@@ -119,4 +119,6 @@ polymorphism: 'many forms';
               simplifies and extends code;
 
 Object(): class from which all objects, arrays, etc. inherit methods;
-          called as 'extends java.lang.Object' or simply 'extends Object';
+          called as 'extends java.lang.Object' or 'extends Object' or simply doesn't need to be called at all;
+
+          included methods: https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html
