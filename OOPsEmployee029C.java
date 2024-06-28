@@ -1,6 +1,6 @@
 public class OOPsEmployee029C extends OOPsWorker029B {
   private long employeeId;
-  private String hireDate;
+  protected String hireDate;
 
   private static int employeeNo = 1;
 
