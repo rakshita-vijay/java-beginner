@@ -18,11 +18,17 @@ public class OOPsTypesOfWorkers029A {
     System.out.println(joe);
 
     System.out.println();
-    OOPsSalariedEmployee029D harry = new OOPsSalariedEmployee029D("Harry", "11/11/1995", "04/04/2020", 2000.0002, false);
+    OOPsSalariedEmployee029D harry = new OOPsSalariedEmployee029D("Harry", "11/11/1995", "04/04/2020", 35000, false);
     System.out.println(harry);
     System.out.println("Harry's fortnightly paycheck is: $" + harry.collectPay());
 
     harry.retire();
     System.out.println("Harry's pension paycheck is: $" + harry.collectPay());
+
+    System.out.println();
+    OOPsHourlyEmployee029E mary = new OOPsHourlyEmployee029E("Mary", "11/11/2000", "05/05/2020", 15);
+    System.out.println(mary);
+    System.out.println("Mary's fortnightly paycheck is: $" + mary.collectPay());
+    System.out.println("Mary's holiday paycheck is: $" + mary.getDoublePay());
   }
 }
