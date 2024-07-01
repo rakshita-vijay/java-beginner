@@ -81,3 +81,15 @@ To get input from the user:
    Scanner <variable> = new Scanner(new File("nameOfFileOnFileSystem"));
 
    String <variable> = <variable>.nextline();
+
+// ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
+string: inspection, comparison, manipulation
+
+        inspection: length, charAt, indexOf, lastIndexOf, isEmpty, isBlank
+                    <...>.charAt(index): use for string, returns character
+                    <...>[index]: use for array, returns character
+                    <...>.indexOf(<char>): returns integer index
+
+        comparison: contentEquals, equals, equalsIgnoreCase
+                    <
