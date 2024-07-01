@@ -110,6 +110,10 @@ super(): calls a constructor directly on the super class from the subclass' cons
 
 // ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
 
+public > protected > private
+
+// ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
 overriding methods: method creation on a subclass with the same signature as a method on a superclass;
                     method signature: method name + (number & types of parameters);
                     child class shows different behaviour from the parent class;
@@ -141,8 +145,10 @@ can have only one. never both
 method overloading: n methods in same class with same name, different parameters and same/different return type;
                     can be done in subclasses;
                     reduces duplicated code;
-                    capable with static and instance methods;
+                    possible with static and instance methods;
                     AKA compile-time polymorphism;
 method overriding: n methods in n classes with same name, same parameters and same return type;
                    (defining method in child class which exists in parent class, with same signature);
+                   methods can be overridden only in child/sub classes;
+                   possible with instance methods;
                    AKA run-time polymorphism and dynamic method dispatch;
