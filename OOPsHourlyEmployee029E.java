@@ -7,7 +7,10 @@ public class OOPsHourlyEmployee029E extends OOPsEmployee029C {
     this.hourlyPayRate = hourlyPayRate;
   }
 
-  public double collectPay() { return (40 * hourlyPayRate); }
+  @Override
+  public double collectPay() {
+    return (40 * hourlyPayRate);
+  }
 
   public double getDoublePay() { return (2 * collectPay()); }
 }

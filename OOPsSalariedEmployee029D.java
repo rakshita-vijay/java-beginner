@@ -9,6 +9,7 @@ public class OOPsSalariedEmployee029D extends OOPsEmployee029C {
     this.isRetired = isRetired;
   }
 
+  @Override
   public double collectPay() {
     double paycheck = (annualSalary / 26);
     return ((isRetired) ? (paycheck * 0.9) : paycheck);

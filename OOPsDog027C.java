@@ -18,6 +18,7 @@ public class OOPsDog027C extends OOPsAnimal027B {
   }
 
   // overriding method 1
+  @Override
   public void makesNoise() {   // if no statements are given inside the method, it makes all dogs silent
     if (type == "Wolf") {
       System.out.print("Owo owoooooo!");
@@ -28,6 +29,7 @@ public class OOPsDog027C extends OOPsAnimal027B {
   }
 
   // overriding method 2
+  @Override
   public void move(String speed) {
     super.move(speed);   // if only this statement is given, it is equivalent to not having an overriding method at all
     // System.out.println("Dogs walk, run, and wag their tails.");

@@ -17,6 +17,7 @@ public class OOPsFish027D extends OOPsAnimal027B {
     System.out.println("Fish's back fins are moving. ");
   }
 
+  @Override
   public void move(String speed) {
     super.move(speed);   // assigns the value in speed to the variable in the animal class
     moveMuscles();
@@ -25,6 +26,7 @@ public class OOPsFish027D extends OOPsAnimal027B {
     }
   }
 
+  @Override
   public void makesNoise() {}
 
   public String toString() {

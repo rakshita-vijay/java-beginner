@@ -3,6 +3,7 @@ public class OOPsCustomerDetails025B {
   public OOPsCustomerDetails025B() {
     System.out.println("Empty constructor called");
   }
+
   private double accountNumber = 13579;
   private double accountBalance = 86420;
   private String customerName = "ABC";

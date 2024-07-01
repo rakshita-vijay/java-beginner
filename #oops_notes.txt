@@ -95,7 +95,7 @@ POJO: Plain Old Java Object;
       mostly has only instance fields;
       usually has only getters and setters for the instance fields;
       db frameworks use POJOs to read data from / write to dbs / files / streams
-      aka bean or JavaBean: JavaBean = POJO + rules;
+      AKA bean or JavaBean: JavaBean = POJO + rules;
           Entity (it mirrors db entities);
           DTO: Data Transfer Object (description of an object that can be modeled as just data);
 
@@ -122,3 +122,27 @@ Object(): class from which all objects, arrays, etc. inherit methods;
           called as 'extends java.lang.Object' or 'extends Object' or simply doesn't need to be called at all;
 
           included methods: https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html
+
+// ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
+both are calls
+
+super(): used to call parent class members;
+         used to call a parent constructor;
+this(): used only in a constructor;
+        used to call current class members;
+        used to call an overloaded constructor;
+        must be the first statement
+
+can have only one. never both
+
+// ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
+method overloading: n methods in same class with same name, different parameters and same/different return type;
+                    can be done in subclasses;
+                    reduces duplicated code;
+                    capable with static and instance methods;
+                    AKA compile-time polymorphism;
+method overriding: n methods in n classes with same name, same parameters and same return type;
+                   (defining method in child class which exists in parent class, with same signature);
+                   AKA run-time polymorphism and dynamic method dispatch;
