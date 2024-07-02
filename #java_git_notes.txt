@@ -91,5 +91,7 @@ string: inspection, comparison, manipulation
                     <...>[index]: use for array, returns character
                     <...>.indexOf(<char>): returns integer index
 
-        comparison: contentEquals, equals, equalsIgnoreCase
-                    <
+        comparison: contentEquals, equals, equalsIgnoreCase, contains, startsWith, endsWith, regionMatches
+                    contentEquals, equals: returns boolean if string value = value of arguments passed; latter is only for strings
+                    contains: returns boolean if string contains argument passed
+                    regionMatches: returns boolean if sub-regions are matched
