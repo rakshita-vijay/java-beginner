@@ -46,7 +46,7 @@ class member modifiers: public, protected, (none), private
 
 // ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
 
-encapsulation: bundling of behaviour and attributes on a single object
+encapsulation: bundling of behaviour and attributes on a single object;
                hiding fields and methods from public access
 
 // ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
@@ -133,12 +133,13 @@ both are calls
 
 super(): used to call parent class members;
          used to call a parent constructor;
+
 this(): used only in a constructor;
         used to call current class members;
         used to call an overloaded constructor;
         must be the first statement
 
-can have only one. never both
+can have only one - never both
 
 // ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
 
@@ -147,8 +148,20 @@ method overloading: n methods in same class with same name, different parameters
                     reduces duplicated code;
                     possible with static and instance methods;
                     AKA compile-time polymorphism;
+
 method overriding: n methods in n classes with same name, same parameters and same return type
                    (defining method in child class which exists in parent class, with same signature);
                    methods can be overridden only in child/sub classes;
                    possible with instance methods;
                    AKA run-time polymorphism and dynamic method dispatch;
+
+// ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
+inheritance: 'IS A' relationship;
+             reuses functionalities and attributes;
+             breaks encapsulation as direct access to a parent state might be required;
+             less flexible - adding/removing classes impacts all subclasses;
+
+composition: 'HAS A' relationship;
+             combination of classes work as a single object
+             more functional, classes share attributes, they don't inherit it from parent class;
