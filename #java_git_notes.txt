@@ -95,3 +95,30 @@ string: inspection, comparison, manipulation
                     contentEquals, equals: returns boolean if string value = value of arguments passed; latter is only for strings
                     contains: returns boolean if string contains argument passed
                     regionMatches: returns boolean if sub-regions are matched
+
+        manipulation: type 1 ~ clean-up: indent, strip, stripLeading, stripTrailing, trim, toLowerCase, toUpperCase
+                                         strip: removes all leading and trailing white spaces
+                                         trim: removes only one leading and one trailing white space, not all
+
+                      type 2 ~ transformation: concat, join, repeat, replace, replaceAll, replaceFirst, substring, subSequence
+                                               concat: string + text = string
+                                               join: concats many elements with delimiter
+
+// ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
+character to string: String.valueOf(<char>)
+
+// ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
+String: defined as a variable;
+        uses concat;
+        when manipulated, should be assigned to a variable;
+        creates new object, returns new reference;
+
+StringBuilder class: defined as an object;
+                     uses append;
+                     when manipulated, does not need to be assigned to a variable
+                     (value of object changed, behaves like a queue);
+                     returns self-reference;
+
+                     delete, deleteCharAt, insert, reverse, setLength

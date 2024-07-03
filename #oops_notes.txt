@@ -147,7 +147,7 @@ method overloading: n methods in same class with same name, different parameters
                     reduces duplicated code;
                     possible with static and instance methods;
                     AKA compile-time polymorphism;
-method overriding: n methods in n classes with same name, same parameters and same return type;
+method overriding: n methods in n classes with same name, same parameters and same return type
                    (defining method in child class which exists in parent class, with same signature);
                    methods can be overridden only in child/sub classes;
                    possible with instance methods;
