@@ -165,3 +165,6 @@ inheritance: 'IS A' relationship;
 composition: 'HAS A' relationship;
              combination of classes work as a single object
              more functional, classes share attributes, they don't inherit it from parent class;
+
+encapsulation: p
+               p
