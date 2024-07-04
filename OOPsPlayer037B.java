@@ -1,7 +1,7 @@
 public class OOPsPlayer037B {
-  public String name;
-  public int health;
-  public String weapon;
+  protected String name;
+  protected int health;
+  protected String weapon;
 
   // private String name;
   // private int health;
