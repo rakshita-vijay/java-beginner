@@ -166,5 +166,9 @@ composition: 'HAS A' relationship;
              combination of classes work as a single object
              more functional, classes share attributes, they don't inherit it from parent class;
 
-encapsulation: p
-               p
+encapsulation: hiding things by making them private or inaccessible, protects integrity;
+               makes interface simpler, hides unnecessary (mostly internal) details;
+
+polymorphism: 'many forms' - a single method's execution can be different for different objects at run-time;
+              simplifies and extends code;
+              inheritance supports polymorphism;
