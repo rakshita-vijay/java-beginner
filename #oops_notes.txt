@@ -163,12 +163,30 @@ inheritance: 'IS A' relationship;
              less flexible - adding/removing classes impacts all subclasses;
 
 composition: 'HAS A' relationship;
-             combination of classes work as a single object
+             combination of classes work as a single object;
              more functional, classes share attributes, they don't inherit it from parent class;
+             usually has a parent class where private objects of other classes are given;
 
 encapsulation: hiding things by making them private or inaccessible, protects integrity;
                makes interface simpler, hides unnecessary (mostly internal) details;
 
-polymorphism: 'many forms' - a single method's execution can be different for different objects at run-time;
-              simplifies and extends code;
+polymorphism: 'many forms'
+              (a single method's execution/behaviour can be different for different objects at run-time);
+              simplifies and extends code - main method code is not changed as subclasses are added;
               inheritance supports polymorphism;
+
+// ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
+compile-time type: user-declared type;
+
+var: contextual keyword that lets code take advantage of Local Variable Type Inference
+     (java figures out compile-time type for us);
+     can't be a return or parameter type;
+
+run-time type may be different from compile-time type because of polymorphism
+
+getting class name: <object>.getClass().getSimpleName();
+
+instanceof operator: tests type of object / instance;
+                     written as: <objectToTest> instancef <possibleType>;
+                                 <objectToTest> instancef <possibleType> <shortcutObjectName>;   // easy to ref
