@@ -5,19 +5,20 @@ public class OOPsCar040B {
     this.description = description;
   }
 
-  public void startEngine() {
-    System.out.println("Engine started.");
+  public void printRunTimeType() {
+    System.out.println("Type: " + this.getClass().getSimpleName());
   }
+
+  public void startEngine() {
+    System.out.println("Engine has started.");
+  }
+
   public void drive() {
-    System.out.println("Car (of type " + this.getClass().getSimpleName() +") is being driven.");
+    System.out.println("Car is being driven.");
     runEngine();
   }
 
   protected void runEngine() {
     System.out.println("Engine is running.");
-  }
-
-  public void printRunTimeType() {
-    System.out.println(this + " is of type " + this.getClass().getSimpleName());
   }
 }
