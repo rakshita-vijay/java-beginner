@@ -73,7 +73,7 @@ how to call a public class:
 // ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
 
 fields: defined in class code block (not in method);
-        assigned default values if not initialized;
+        assigned default values if not initialized
 
 getter: method that gets the value of a private field and returns it;
         written in the sister class (Xyz): public <returnType> get<detail>() {
@@ -97,13 +97,13 @@ POJO: Plain Old Java Object;
       db frameworks use POJOs to read data from / write to dbs / files / streams
       AKA bean or JavaBean: JavaBean = POJO + rules;
           Entity (it mirrors db entities);
-          DTO: Data Transfer Object (description of an object that can be modeled as just data);
+          DTO: Data Transfer Object (description of an object that can be modeled as just data)
 
 // ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
 
 inheritance: using 'extends' (specifies the superclass / parent class of the class being declared);
              only one class in extends clause;
-             uses super() to call the superclass being extended;
+             uses super() to call the superclass being extended
 
 super(): calls a constructor directly on the super class from the subclass' constructor;
          must be the first statement of the constructor (thus, cannot be used with this())
@@ -120,10 +120,10 @@ overriding methods: method creation on a subclass with the same signature as a m
                     extends functionality of parent class
 
 polymorphism: 'many forms';
-              simplifies and extends code;
+              simplifies and extends code
 
 Object(): class from which all objects, arrays, etc. inherit methods;
-          called as 'extends java.lang.Object' or 'extends Object' or simply doesn't need to be called at all;
+          called as 'extends java.lang.Object' or 'extends Object' or simply doesn't need to be called at all
 
           included methods: https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html
 
@@ -132,7 +132,7 @@ Object(): class from which all objects, arrays, etc. inherit methods;
 both are calls
 
 super(): used to call parent class members;
-         used to call a parent constructor;
+         used to call a parent constructor
 
 this(): used only in a constructor;
         used to call current class members;
@@ -147,41 +147,41 @@ method overloading: n methods in same class with same name, different parameters
                     can be done in subclasses;
                     reduces duplicated code;
                     possible with static and instance methods;
-                    AKA compile-time polymorphism;
+                    AKA compile-time polymorphism
 
 method overriding: n methods in n classes with same name, same parameters and same return type
                    (defining method in child class which exists in parent class, with same signature);
                    methods can be overridden only in child/sub classes;
                    possible with instance methods;
-                   AKA run-time polymorphism and dynamic method dispatch;
+                   AKA run-time polymorphism and dynamic method dispatch
 
 // ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
 
 inheritance: 'IS A' relationship;
              reuses functionalities and attributes;
              breaks encapsulation as direct access to a parent state might be required;
-             less flexible - adding/removing classes impacts all subclasses;
+             less flexible - adding/removing classes impacts all subclasses
 
 composition: 'HAS A' relationship;
              combination of classes work as a single object;
              more functional, classes share attributes, they don't inherit it from parent class;
-             usually has a parent class where private objects of other classes are given;
+             usually has a parent class where private objects of other classes are given
 
 encapsulation: hiding things by making them private or inaccessible, protects integrity;
-               makes interface simpler, hides unnecessary (mostly internal) details;
+               makes interface simpler, hides unnecessary (mostly internal) details
 
 polymorphism: 'many forms'
               (a single method's execution/behaviour can be different for different objects at run-time);
               simplifies and extends code - main method code is not changed as subclasses are added;
-              inheritance supports polymorphism;
+              inheritance supports polymorphism
 
 // ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
 
-compile-time type: user-declared type;
+compile-time type: user-declared type
 
 var: contextual keyword that lets code take advantage of Local Variable Type Inference
      (java figures out compile-time type for us);
-     can't be a return or parameter type;
+     can't be a return or parameter type
 
 run-time type may be different from compile-time type because of polymorphism
 
@@ -190,3 +190,22 @@ getting class name: <object>.getClass().getSimpleName();
 instanceof operator: tests type of object / instance;
                      written as: <objectToTest> instancef <possibleType>;
                                  <objectToTest> instancef <possibleType> <shortcutObjectName>;   // easy to ref
+
+// ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
+packages: corresponds to a folder in the os;
+          organizes & groups a set of related types in a tree-like fashion by functionality/ relationship
+          (structures the codebase while import makes it more readable);
+          named in all lowercase;
+          hierarchical levels of package separated by '.';
+          encapsulates our classes from classes in other packages;
+          come before import statements;
+          only one package statement allowed
+
+same class names can be reused acress different packages - differentiated by the import statement (branches)
+
+Fully Qualified Class Name (FQCN): <packageName> + <className>;
+                                   instead of importing at the top, can use FQCN in the location of utilization / reference
+
+classes are implicitly placed in the default package;
+importing from default package to classes outside default package is not;
