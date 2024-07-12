@@ -1,0 +1,35 @@
+arrays: stores sequence of same-type values;
+        can be used for primitive data types and classes;
+
+        '<dataType>[] <arrayName>;' or '<dataType> <arrayName>[];' - no specification of size;
+
+        declared as: <dataType> <arrayName>[] = new <dataType>[<size>];
+                     ex: int[] integerArray = new int[10];
+
+        once instantiated, size cannot be changed;
+
+        without specifying number of elements: <dataType>[] <arrayName> = new <dataType>[] {<elementsOfArray>};
+        valid declaration and initialization: <dataType>[] <arrayName>;
+                                              <arrayName> = new <dataType>[] {<elementsOfArray>};
+
+        anonymous array: <dataType>[] <arrayName> = {<elementsOfArray>};
+                         cannot be used for initialization in a statement outside a declaration statement;
+
+// ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
+enhanced for loop: for (declaration : collection) {}
+                   declaration: includes type and variableName (usually local variable with same type as arrayElement)
+                   collection: array (or some other collection variable)
+
+                   every value of the array passed as collection is stored in declaration for subsequent iterations
+
+// ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
+helper class: java.util.Arrays (static methods)
+              inherits from java.util.Object
+
+import java.util.Arrays;
+           +
+Arrays.toString(<array>) returns string of array memmbers; format: in square brackets, comma-delimited - [a, b, c, ...]
+
+declaring an array of different types: Object[] <arrayName> = new Object[<size>];
