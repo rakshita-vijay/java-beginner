@@ -81,3 +81,11 @@ To get input from the user:
    Scanner <variable> = new Scanner(new File("nameOfFileOnFileSystem"));
 
    String <variable> = <variable>.nextline();
+
+// ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
+variable arguments as method parameter: 'String... args' instead of 'String[] args';
+                                        only one in a method;
+                                        must be the last argument
+
+// ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*

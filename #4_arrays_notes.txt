@@ -33,3 +33,5 @@ import java.util.Arrays;
 Arrays.toString(<array>) returns string of array memmbers; format: in square brackets, comma-delimited - [a, b, c, ...]
 
 declaring an array of different types: Object[] <arrayName> = new Object[<size>];
+
+all variables are references
