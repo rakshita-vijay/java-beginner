@@ -204,6 +204,9 @@ packages: corresponds to a folder in the os;
 
 same class names can be reused acress different packages - differentiated by the import statement (branches)
 
+library vs. package: library: collection of classes that have been written by somebody else
+                     package: collection of classes you write yourself
+
 Fully Qualified Class Name (FQCN): <packageName> + <className>;
                                    instead of importing at the top, can use FQCN in the location of utilization / reference
 
