@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class DescendingSort048 {
+public class DescendingSort048A {
   public static void main(String[] args) {
     Random random = new Random();
     int[] intArray = new int[3];
