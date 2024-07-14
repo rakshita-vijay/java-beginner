@@ -202,6 +202,8 @@ packages: corresponds to a folder in the os;
           come before import statements;
           only one package statement allowed
 
+          https://www.geeksforgeeks.org/packages-in-java/
+
 same class names can be reused acress different packages - differentiated by the import statement (branches)
 
 library vs. package: library: collection of classes that have been written by somebody else
