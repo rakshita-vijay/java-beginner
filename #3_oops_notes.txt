@@ -3,8 +3,10 @@ features of OOPs: inheritance, encapsulation, polymorphism, composition
 
 // ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
 
-state: features that describe an object, stored in fields / variables / attributes, defined in class code block (not in method)
-behaviour: actions performed by an object, stored in methods
+state: features that describe an object
+       stored in fields / variables / attributes, defined in class code block (not in method)
+behaviour: actions performed by an object
+           stored in methods
 
 class: blueprint for designing object
 class members: instance, static
