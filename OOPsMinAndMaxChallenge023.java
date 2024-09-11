@@ -13,7 +13,6 @@ public class OOPsMinAndMaxChallenge023 {
     boolean choice = true;
 
     while (choice) {
-    // while (true) {
       String inputNum = scan.nextLine();
       try {
         int inputNumber = Integer.parseInt(inputNum);
@@ -40,5 +39,7 @@ public class OOPsMinAndMaxChallenge023 {
 
     System.out.println("Smallest number entered: " + minNum);
     System.out.println("Largest number entered: " + maxNum);
+
+    scan.close();
   }
 }

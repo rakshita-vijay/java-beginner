@@ -40,6 +40,8 @@ public class OOPsGettingInputFromUser021 {
       age = currentYear - yearOfBirth;
     } while (age > 125 || age < 0);
 
+    scan.close();
+
     return "Your age is " + age + ". ";
   }
 

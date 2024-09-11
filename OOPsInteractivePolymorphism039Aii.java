@@ -32,5 +32,7 @@ public class OOPsInteractivePolymorphism039Aii {
       // movie.watchMovie();
       System.out.println();
     }
+
+    scan.close();
   }
 }

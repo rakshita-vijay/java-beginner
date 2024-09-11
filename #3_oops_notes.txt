@@ -216,3 +216,32 @@ Fully Qualified Class Name (FQCN): <packageName> + <className>;
 
 classes are implicitly placed in the default package;
 importing from default package to classes outside default package is not;
+
+// ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
+modifiers: abstract, static, final, default, native, synchronized
+           final: cannot be overridden by subclasses
+           default: only applicable to interfaces
+           native: not covered in the course
+
+abstract class: has method signature, has return type, doesn't have method body
+                instance of ac cannot be created (with new ---)
+                can have constructor which is called by subclasses during construction
+                cannot be private
+                acs and interfaces can have amix of abstract and concrete methods
+
+abstract method: unimplemented
+
+concrete code: has method body (operational code)
+               implements abstract code if it overrides it
+
+abstract classes always participate in inheritance
+
+abstract class can extend a concrete class
+abstract class can extend an abstract class
+concrete class can extend an abstract class
+
+abstract method can only be defined in an abstract class
+abstract child class doesn't have to implement abstract parent methods
+
+abstract child class can include additional abstract methods which forces child classes to implement acc's and apc's abstract methods

@@ -13,6 +13,8 @@ public class MinimumElement050 {
       intArray[index] = Integer.parseInt(integerList[index]);
     }
 
+    scan.close();
+
     return intArray;
   }
 

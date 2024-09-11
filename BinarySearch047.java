@@ -9,7 +9,7 @@ public class BinarySearch047 {
     if (Arrays.binarySearch(stringArray1, "Mark") >= 0) {
       System.out.println("Mark is in the list! Hi Mark!");
     } else {
-      System.out.println("Mark is not in the list :(");
+      System.out.println("Mark is not in the list :( ");
     }
 
     // searching if strings are equal - technically comes under this?

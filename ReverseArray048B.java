@@ -33,5 +33,7 @@ public class ReverseArray048B {
 
     reverse(intArray);
     System.out.println("Reversed Array: " + Arrays.toString(intArray));
+
+    scan.close();
   }
 }
