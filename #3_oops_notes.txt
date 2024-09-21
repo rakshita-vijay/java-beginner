@@ -85,6 +85,8 @@ getter: method that gets the value of a private field and returns it;
 
 setter: method that sets the value of a private field
 
+getters and setters do not improve encapsulation, but are helpful to access the variables
+
 // ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
 
 this: special keyword, refers to instance created when object was instantiated (current instance of the class);
@@ -219,8 +221,11 @@ importing from default package to classes outside default package is not;
 
 // ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
 
+'import static', not 'static import' for importing package
+
 modifiers: abstract, static, final, default, native, synchronized
-           final: cannot be overridden by subclasses
+           final: cannot be overridden by subclasses or methods in same class
+                  final variables are initialized to null
            default: only applicable to interfaces
            native: not covered in the course
 
