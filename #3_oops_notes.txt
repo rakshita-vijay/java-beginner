@@ -233,7 +233,9 @@ abstract class: has method signature, has return type, doesn't have method body
                 instance of ac cannot be created (with new ---)
                 can have constructor which is called by subclasses during construction
                 cannot be private
-                acs and interfaces can have amix of abstract and concrete methods
+                acs and interfaces can have a mix of abstract and concrete methods
+                can declare fields that aren't static and final
+                can extendone parent class, can implement multiple interfaces
 
 abstract method: unimplemented
 
@@ -250,3 +252,56 @@ abstract method can only be defined in an abstract class
 abstract child class doesn't have to implement abstract parent methods
 
 abstract child class can include additional abstract methods which forces child classes to implement acc's and apc's abstract methods
+
+// ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
+if you omit access modifier on class member, implicity package private
+if you omit access modifier on interface member, implicity package public
+
+// ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
+final modifier: prevents further modifications, cannot be overridden by subclasses
+
+// ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
+constant: variable that cannot be changed
+          usually named with all caps with underscores as separators
+          static constant is accessed via type name
+
+          double = final double = public final double = public static final double
+
+// ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
+abstract classes and interfaces: abstracted reference types
+                                 used as variable, method, return, and list types
+                                 referred to as coding to an interface
+                                 using interface as reference type is considered best coding practice
+
+coding to an interface: scales well to support new subtypes
+
+
+
+
+
+
+
+
+// ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
+interface: by using an interface, code must implement all abstract methods in it
+           can be extended (by other interfaces) and implemented (by classes)
+           interface cannot implement interface
+
+??? ??? ??? ??? ??? ???
+
+// ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
+interfaces: can extend another interface
+            can have a mix of abstract and concrete methods
+            all methods on interfaces declared without a method bedoy are, by default, public and abstract
+            decouples 'what' from 'how'
+
+unrelated classes will implement your intereface
+wanna separate different behaviour
+
+Collections Framework: Lists, Queues, ArrayList, LinkedList
