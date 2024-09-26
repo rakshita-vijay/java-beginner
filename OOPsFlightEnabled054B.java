@@ -5,4 +5,9 @@ interface OOPsFlightEnabled054B { // abstract modifier here is redundant because
   public abstract void takeOff(); // if changed to protected / private, then you are reducing the scope - not allowed
   abstract void land(); // implicitly declared public abstract
   void fly(); // implicitly declared public abstract
+
+  default OOPsFlightStages054Ci transition(OOPsFlightStages054Ci flightStage) {
+    System.out.println("Transition not implemented on: " + this.getClass().getSimpleName());
+    return null;
+  }
 }

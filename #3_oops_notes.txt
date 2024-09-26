@@ -279,6 +279,12 @@ abstract classes and interfaces: abstracted reference types
 
 coding to an interface: scales well to support new subtypes
 
+// ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
+extension method: identified by the 'default' modifier
+                  concrete method, must have method body
+                  like a method on a superclass because it can be overridden
+                  adding this does not break classes implementing the interface
 
 
 

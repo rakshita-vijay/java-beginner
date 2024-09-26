@@ -22,4 +22,10 @@ public class OOPsJet054G implements OOPsFlightEnabled054B, OOPsTrackable054D {
   public void track() {
     System.out.println(getSimpleName() + "'s coordinates recorded");
   }
+
+  @Override
+  public OOPsFlightStages054Ci transition(OOPsFlightStages054Ci flightStage) {
+    System.out.println(getClass().getSimpleName() + " transitioning");
+    return OOPsFlightStages054Ci.CRUISE;
+  }
 }
