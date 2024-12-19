@@ -4,7 +4,7 @@ import java.lang.String;
 
 public class Shop {
   public static float returnCostToPayAfterDiscount(float cost) {
-    return (cost >= 2500) ? (cost - ((10 * cost) / 100)) : cost;
+    return (cost >= 2500) ? returnCostToPayAfterDiscount(10, cost) : cost;
   }
 
   public static float returnCostToPayAfterDiscount(float discountPercentage, float cost) {
@@ -72,10 +72,19 @@ public class Shop {
           finalCostWithoutTax += (allPackagesInShop.get(innerIndex)).getPrice();
           finalCostWithTax += (allPackagesInShop.get(innerIndex)).returnCostToPay();
 
-          if ((allPackagesInShop.get(innerIndex)).getType() == "Standard") {
-            stdType++;
-          } else {
-            premiumType++;
+          // if ((allPackagesInShop.get(innerIndex)).getType() == "Standard") {
+          //   stdType++;
+          // } else {
+          //   premiumType++;
+          // }
+
+          switch((allPackagesInShop.get(innerIndex)).getType()) {
+            case "Standard":
+              stdType++;
+              break;
+            case "Premium":
+              premiumType++;
+              break;
           }
         }
       }
